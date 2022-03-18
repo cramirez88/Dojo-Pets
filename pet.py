@@ -1,10 +1,34 @@
+
+
+
 class Pet():
-    def __init__(self, name, type, tricks):
+    def __init__(self, name, type, tricks, sound):
       self.name = name
       self.type = type
       self.tricks = tricks
+      self.sound = sound
+      self.energy = 100
+      self.health = 100
     
+
 # implement the following methods:
-# walk() - walks the ninja's pet invoking the pet play() method
-# feed() - feeds the ninja's pet invoking the pet eat() method
-# bathe() - cleans the ninja's pet invoking the pet noise() method
+# sleep() - increases the pets energy by 25
+    def sleep(self):
+      self.energy += 25
+      return self
+
+# eat() - increases the pet's energy by 5 & health by 10
+    def eat(self):
+      self.energy += 5
+      self.health += 10
+      return self
+# play() - increases the pet's health by 5
+    def play(self):
+      self.health += 5
+# noise() - prints out the pet's sound
+    def noise(self):
+      print(self.sound)
+      return self
+
+
+frog = Pet('Kermit', 'Muppet', ['Memes', 'Acting', 'Trolling'], 'rebbit')
