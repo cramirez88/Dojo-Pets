@@ -1,6 +1,3 @@
-
-
-
 class Pet():
     def __init__(self, name, type, tricks, sound):
       self.name = name
@@ -29,6 +26,22 @@ class Pet():
     def noise(self):
       print(self.sound)
       return self
+
+#SENSEI BONUS: Use Inheritance to create sub classes of pets.
+
+class Cat(Pet):
+    def __init__(self, name, type, tricks, sound):
+      super().__init__(name, type, tricks, sound)
+
+class Dog(Pet):
+    def __init__(self, name, type, tricks, sound):
+      super().__init__(name, type, tricks, sound)
+
+
+
+
+
+
 
 
 frog = Pet('Kermit', 'Muppet', ['Memes', 'Acting', 'Trolling'], 'rebbit')

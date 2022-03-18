@@ -1,5 +1,3 @@
-from pet import *
-
 class Ninja():
     def __init__(self, first_name, last_name, pet, treats, pet_food):
       self.first_name = first_name
@@ -22,9 +20,4 @@ class Ninja():
       self.pet.noise()
       return self
 
-red_ninja = Ninja('Christian', 'Ramirez', frog, ['cookies', 'brownies', 'cake'], ['Steaks', 'Chicken', 'Sausage'])
-red_ninja.feed()
-red_ninja.walk()
-red_ninja.bathe()
 
-print(red_ninja.pet.name)
